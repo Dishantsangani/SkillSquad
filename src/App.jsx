@@ -4,8 +4,11 @@ import Sidebar from "./Componenet/Sidebar";
 import Navbar from "./Componenet/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Import necessary Router components
 import Home from "./Page/Home";
-import About from "./Page/About";
+import Marks from "./Page/Marks";
 import Footer from "./Componenet/Footer";
+import Grade from "./Page/Grade";
+import Report from "./Page/Report";
+import About from "./Page/About";
 
 function App() {
   // State for sidebar visibility in mobile view
@@ -37,6 +40,9 @@ function App() {
           <div className="page-content ">
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/marks" element={<Marks />} />
+              <Route path="/Grade" element={<Grade />} />
+              <Route path="/report" element={<Report />} />
               <Route path="/about" element={<About />} />
               {/* Add more routes as needed */}
             </Routes>
