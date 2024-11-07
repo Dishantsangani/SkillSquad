@@ -1,11 +1,13 @@
 import React from "react";
+import { BlurText } from "../assets/Animation's/BlurText";
 
 function Marks() {
   return (
     <>
       <div className="relative rounded-xl bg-slate-100 px-8 py-4">
         <h2 className="text-xl  text-blue-500 font-bold sm:text-4xl">
-          Student Marks
+          Student
+          <BlurText text=" Marks !" className="custom-class" delay={50} />
         </h2>
         <hr className="h-px my-2 bg-gray-200 border-0 dark:bg-gray-700" />
         <p className="mt-1 text-xl sm:mt-2 sm:text-2xl text-gray-600 ">

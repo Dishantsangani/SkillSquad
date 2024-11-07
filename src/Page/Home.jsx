@@ -1,4 +1,5 @@
 import React from "react";
+import { SplitText } from "../assets/Animation's/SplitText";
 
 function Home() {
   return (
@@ -10,7 +11,11 @@ function Home() {
           <div className="from-blue-80/10 abg-gradient-to-br absolute -top-10 right-20 h-24 w-24 rounded-full bg-white to-blue-600 opacity-10" />
           <div className="relative rounded-xl bg-slate-50 px-8 py-4">
             <h2 className="text-xl text-center text-gray-600 font-bold sm:text-4xl">
-              Welcome To SkillSquad
+              <SplitText
+                text="Welcome To SkillSquad !"
+                className="custom-class"
+                delay={50}
+              />
             </h2>
           </div>
         </div>
@@ -159,7 +164,7 @@ function Home() {
         </form>
 
         <hr class="h-px my-8 bg-black border-0 dark:bg-gray-700" />
-        
+
         {/* Table */}
         <section className="px-8 mx-auto mt-5 ">
           <div className="flex flex-col border border-black rounded-md">

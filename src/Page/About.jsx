@@ -1,5 +1,6 @@
 import React from "react";
 import profile from "../assets/my-photo.png";
+import { BlurText } from "../assets/Animation's/BlurText";
 
 function About() {
   return (
@@ -7,12 +8,16 @@ function About() {
       <section className="bg-white dark:bg-gray-900">
         <div className="container px-6 py-10 mx-auto">
           <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
-            What our <span className="text-blue-500 ">clients</span> say
+            What our
+            <span className="text-blue-500 ">
+              <BlurText text=" Clients" className="custom-class" delay={50} />
+            </span>
+            say
           </h1>
           <p className="max-w-2xl mx-auto mt-6 text-center text-gray-500 dark:text-gray-300">
-            They appreciate the dedication to understanding client needs and
-            providing tailored solutions that enhance their operational
-            efficiency.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+            incidunt ex placeat modi magni quia error alias, adipisci rem
+            similique, at omnis eligendi optio eos harum.
           </p>
           <div className="grid grid-cols-1 gap-8 mx-auto mt-8 lg:grid-cols-2 xl:mt-10 max-w-7xl">
             <div className="p-6 bg-gray-100 rounded-lg dark:bg-gray-800 md:p-8">
