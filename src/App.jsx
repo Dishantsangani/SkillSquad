@@ -11,10 +11,7 @@ import Report from "./Page/Report";
 import About from "./Page/About";
 
 function App() {
-  // State for sidebar visibility in mobile view
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
-  // Function to toggle sidebar visibility
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
@@ -22,7 +19,6 @@ function App() {
   return (
     <Router>
       <div className="app-container d-flex">
-        {/* Sidebar */}
         <div
           className={`-container ${
             isSidebarOpen ? "block" : "hidden"
@@ -44,7 +40,6 @@ function App() {
               <Route path="/Grade" element={<Grade />} />
               <Route path="/report" element={<Report />} />
               <Route path="/about" element={<About />} />
-              {/* Add more routes as needed */}
             </Routes>
           </div>
           <Footer />

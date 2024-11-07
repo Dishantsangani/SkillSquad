@@ -1,35 +1,67 @@
 import React from "react";
+import profile from "../assets/my-photo.png";
 
 function About() {
   return (
     <>
-      <div className="container px-7 py-16 mx-auto">
-        <div className="items-center lg:flex">
-          <div className="w-full lg:w-1/2">
-            <div className="lg:max-w-lg">
-              <h1 className="text-3xl font-semibold text-gray-800 dark:text-white lg:text-4xl">
-                Best place to choose <br /> your{" "}
-                <span className="text-blue-500 ">clothes</span>
-              </h1>
-              <p className="mt-3 text-gray-600 dark:text-gray-400">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
-                beatae error laborum ab amet sunt recusandae? Reiciendis natus
-                perspiciatis optio.
+      <section className="bg-white dark:bg-gray-900">
+        <div className="container px-6 py-10 mx-auto">
+          <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
+            What our <span className="text-blue-500 ">clients</span> say
+          </h1>
+          <p className="max-w-2xl mx-auto mt-6 text-center text-gray-500 dark:text-gray-300">
+            They appreciate the dedication to understanding client needs and
+            providing tailored solutions that enhance their operational
+            efficiency.
+          </p>
+          <div className="grid grid-cols-1 gap-8 mx-auto mt-8 lg:grid-cols-2 xl:mt-10 max-w-7xl">
+            <div className="p-6 bg-gray-100 rounded-lg dark:bg-gray-800 md:p-8">
+              <p className="leading-loose text-gray-500 dark:text-gray-300">
+                “At SkillSquad, we are committed to streamlining workflows and
+                optimizing productivity. Our platform is designed to enhance
+                team collaboration, skill development, and project management
+                through intuitive tools and features”.
               </p>
-              <button className="w-full px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-blue-600 rounded-lg lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
-                Shop Now
-              </button>
+              <div className="flex items-center mt-6">
+                <img
+                  className="object-cover rounded-full w-14 h-14"
+                  src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                  alt=""
+                />
+                <div className="mx-4">
+                  <h1 className="font-semibold text-blue-500">Robbert</h1>
+                  <span className="text-sm text-gray-500 dark:text-gray-300">
+                    Marketing Manager at Stech
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="p-6 bg-gray-100 rounded-lg dark:bg-gray-800 md:p-8">
+              <p className="leading-loose text-gray-500 dark:text-gray-300">
+                “Whether you're onboarding new employees or upskilling your
+                current team, SkillSquad ensures everyone stays aligned with
+                clear goals, measurable progress, and seamless integration into
+                your existing systems.”.
+              </p>
+              <div className="flex items-center mt-6">
+                <img
+                  className="object-cover rounded-full w-14 h-14"
+                  src={profile}
+                  alt=""
+                />
+                <div className="mx-4">
+                  <h1 className="font-semibold text-blue-500">
+                    Dishant Sangani
+                  </h1>
+                  <span className="text-sm text-gray-500 dark:text-gray-300">
+                    Founder Of SkillSquad
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
-            <img
-              className="w-full h-full lg:max-w-3xl"
-              src="https://merakiui.com/images/components/Catalogue-pana.svg"
-              alt="Catalogue-pana.svg"
-            />
-          </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }
