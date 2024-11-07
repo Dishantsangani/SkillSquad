@@ -1,0 +1,30 @@
+.app-container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+}
+
+.sidebar-container {
+  width: 250px; /* Fixed width for sidebar */
+  background-color: #343a40; /* Dark background for sidebar */
+  color: white;
+}
+
+.main-content {
+  flex-grow: 1; /* Takes the remaining space */
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.ms-4 {
+  margin-left: 1rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
